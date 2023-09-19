@@ -1,9 +1,11 @@
 let s="";
 let s1="";
+let s2="";
 let audio=new Audio("mm.mp3");
 function ev(event)
 {
   audio.play();
+  
   if(event.target.innerHTML=='AC')
   {
     s='';
