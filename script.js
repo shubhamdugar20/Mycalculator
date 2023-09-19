@@ -1,7 +1,9 @@
 let s="";
 let s1="";
+let audio=new Audio("mm.mp3");
 function ev(event)
 {
+  audio.play();
   if(event.target.innerHTML=='AC')
   {
     s='';
@@ -43,6 +45,7 @@ let a=document.querySelectorAll(".button");
 //button.addEventListener('click',ev);
 Array.from(a).forEach((butto)=>{
   butto.addEventListener('click',ev);
+  
   
   
 })
